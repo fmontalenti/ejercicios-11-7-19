@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <script>
+        var valorHora = parseFloat(prompt('ingrese el valor de la hora'));
+        var cantHorasXMes = parseFloat(promp('ingrese la cantidad de horas trabajadas'));
+        var aniosAntiguedad = parseFloat(prompt('ingrese los años de antiguedad en la empresa'));
+        var cantSeguros = parseFloat(prompt('ingrese la cantidad de seguros vendidos'));
+        var valorSeguroCaro = parseFloat(prompt('ingrese el valor del seguro vendido más caro'));
+
+        var sueldoMensual = valorHora * cantHorasXMes;
+        // a. sueldo mensual = cant horas * valorHora
+        var bonoSeguroCaro = (valorSeguroCaro * 50) / 100;
+        // 1. = 50% del seguro + caro vendido
+        var bonoSeguroVendido = ((sueldoMensual * 20) / 100) * cantSeguros;
+        // 2. = 20% del sueldo(x cantidad de seguros vendidos)
+        // 3. 10% del sueldo por año de antiguedad
+        var bonoAnioAntiguedad = ((sueldoMensual + 10) / 100) * aniosAntiguedad;
+
+        var sueldoMensualTotal = sueldoMensual + bonoSeguroCaro + bonoSeguroVendido + bonoAnioAntiguedad;
+
+        var promedioHora = sueldoTotal / cantHorasxMes;
+
+        document.write('su sueldo mensual es de: $ ' + sueldoMensualTotal + ' - ');
+        document.write('el valor de su hora promedio es de: $ ' + horaPromedio + ' ');
+    </script>
+    <body>
+        <p>
+            Realizar un sistema para el cálculo de sueldo de una empresa de seguros. Se le solicita al empleado que ingrese el valor de la hora, la cantidad de
+            horas trabajadas en el mes, los años de antigüedad, la cantidad de seguros vendidos y el valor del seguro más caro vendido. Realice el algoritmo
+            para calcular e informar el sueldo de un empleado en el mes, teniendo en cuenta que se le asigna un premio igual al 50% del seguro más caro vendido,
+            un premio igual al 20% del sueldo por la cantidad de seguros vendidos y otro premio igual al 10% del sueldo por año de antigüedad. Una vez obtenido
+            el sueldo final, calcular e informar el valor promedio de la hora del empleado.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <script>
+        var valorHora = parseFloat(prompt('ingrese el valor de la hora'));
+        var cantHorasXMes = parseFloat(prompt('ingrese la cantidad de horas trabajadas'));
+
+        var sueldoMensual = valorHora * cantHorasXMes;
+        var sueldoAnual = sueldoMensual * 12;
+
+        document.write('su sueldo mensual es de: $ ' + sueldoMensual + ' - ');
+        document.write('su sueldo anual es de: $ ' + sueldoAnual + ' - ');
+
+        console.log(sueldoMensual, sueldoAnual);
+    </script>
+    <body>
+        <p>
+            Realizar un sistema para el cálculo de sueldos de una empresa. Se le solicita al empleado que ingrese el valor de la hora y la cantidad de horas
+            trabajadas en el mes. Realice el algoritmo para calcular e informar el sueldo de un empleado en el mes y a lo largo de un año.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <script>
+        var numero = parseFloat(prompt('ingrese un numero'));
+
+        if (numero == 0) {
+            document.write('el numero ingresado es igual a Cero');
+        } else {
+            if (numero % 2 == 0) {
+                document.write('el numero ingresado es par');
+            } else {
+                if (numero % 2 != 0) {
+                    document.write('el numero ingresado es impar');
+                }
+            }
+        }
+    </script>
+    <body>
+        <p>
+            Se le solicita al usuario que ingrese un número. Realice el algoritmo para informar si el número es cero, par o impar.
+        </p>
+    </body>
+</html>

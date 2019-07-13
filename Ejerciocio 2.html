@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <script>
+        var valorHora = parseFloat(prompt('ingrese el valor de la hora'));
+        var cantHoraXMes = parseFloat(prompt('inrgese la cantidad de horas trabajadas por mes'));
+        var aniosAntiguedad = parseFloat(prompt('Ingrese aqui los años de antiguedad trabajados en la empresa'));
+
+        var sueldoMensual = valorHora * cantHoraXMes;
+        var bonoAnioAntiguedad = ((sueldoMensual + 5) / 100) * aniosAntiguedad;
+        var sueldoMensualTotal = sueldoMensual + bonoAnioAntiguedad;
+        var sueldoAnualTotal = sueldoMensualTotal * 12;
+
+        document.write('su sueldo mensual es de: $ ' + sueldoMensualTotal + ' - ');
+        document.write('su sueldo anual es de: $ ' + sueldoAnualTotal + ' - ');
+    </script>
+    <body>
+        <p>
+            Realizar un sistema para el cálculo de sueldos de una empresa de software. Se le solicita al empleado que ingrese el valor de la hora, la cantidad
+            de horas trabajadas en el mes y los años de antigüedad en la empresa. Realice el algoritmo para calcular e informar el sueldo de un empleado en el
+            mes y a lo largo de un año, teniendo en cuenta que se le asigna un premio igual al 5% del sueldo por año de antigüedad.
+        </p>
+    </body>
+</html>
